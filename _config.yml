@@ -1,8 +1,8 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-workshop_repo   : "https://github.com/Reproducible-Science-Curriculum/2017-03-15-duke"
-workshop_site   : "https://reproducible-science-curriculum.github.io/2017-03-15-duke/"
+workshop_repo   : "https://https://github.com/gekaklam/test-workshop.git"
+workshop_site   : "https://gekaklam.github.io/test-workshop/"
 #--------------------------------------------------------------------------------
 # Standard Data Carpentry settings - should not need to be modified.
 #--------------------------------------------------------------------------------
