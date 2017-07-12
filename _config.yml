@@ -1,7 +1,7 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-workshop_repo   : "https://https://github.com/gekaklam/test-workshop.git"
+workshop_repo   : "https://github.com/gekaklam/test-workshop.git"
 workshop_site   : "https://gekaklam.github.io/test-workshop/"
 #--------------------------------------------------------------------------------
 # Standard Data Carpentry settings - should not need to be modified.
