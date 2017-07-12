@@ -1,104 +1,101 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "Duke University, Perkins LINK 072 (Classroom 6)"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "Alte Mensa"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Perkins LINK 072 (Classroom 6)"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "us"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+country: "de"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "36.00260,-78.93848"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "Mar 15-16, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
+humandate: "Jul 17, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00am - 5:00pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: 2017-03-15      # use YYYY-MM-DD format like 2015-01-01
-enddate: 2017-03-16        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Karen Cranston (Duke, Biology)", "Hilmar Lapp (Duke, GCB)", "Dan Leehr (Duke, GCB)", "R. Burke Squires (NIAID)", "Jamie Whitacre (UC Berkeley)"]
+startdate: 2017-07-17      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2017-07-17        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Georgios Kaklamanos (GWDG)"]
 helper: # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "hilmar.lapp@duke.edu"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: http://pad.software-carpentry.org/2017-03-15-duke         # optional (insert the URL for your Etherpad if you're using one)
+contact: "georgios.kaklamanos@gwdg.de"      # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad: https://etherpad.gwdg.de/p/test-workshop         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
-day1_am: "Introduction, Data & Project Organization"
-day1_pm: "Data Exploration"
-day2_am: "Automation"
-day2_pm: "Publishing and Sharing"
+day1_pm: "Introduction, Data & Project Organization, Data Exploration, Automation, Publishing and Sharing"
 ---
 <!--
-  HEADER
+    HEADER
 
-  Edit the values in the block above to be appropriate for your
-  workshop.  Run 'tools/check' *before* committing to make sure that
-  changes are good.
--->
+    Edit the values in the block above to be appropriate for your
+    workshop.  Run 'tools/check' *before* committing to make sure that
+    changes are good.
+  -->
 
 <!--
-  EVENTBRITE
+    EVENTBRITE
 
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
+    This block includes the Eventbrite registration widget if
+    'eventbrite' has been set in the header.  You can delete it if you
+    are not using Eventbrite, or leave it in, since it will not be
+    displayed if the 'eventbrite' field in the header is not set.
+  -->
 {% if page.eventbrite %}
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="206px"
-  scrolling="auto">
+   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+   frameborder="0"
+   width="100%"
+   height="206px"
+   scrolling="auto">
 </iframe>
 {% endif %}
 
 <h2>General Information</h2>
 
 <!--
-  INTRODUCTION
+    INTRODUCTION
 
-  Edit the general explanatory paragraph below if you want to change
-  the pitch.
--->
+    Edit the general explanatory paragraph below if you want to change
+    the pitch.
+  -->
 <p>
 
 
 <p>
-This hands-on workshop teaches basic concepts, skills and tools for working more
-effectively and reproducibly with data in Juypter notebooks.
+  This hands-on workshop teaches basic concepts, skills and tools for working more
+  effectively and reproducibly with data in Juypter notebooks.
 </p>
 
 <p>
-<b>The following are the overarching learning objectives for the curriculum.</b>
-<ul>
-<li>Understand the value of reproducible research practices for more effective research for the current and future you.</li>
-<li>Understand the value of reproducible research practices for advancing research as a whole.</li>
-<li>Understand what is meant by making your research more reproducible.</li>
-<li>Know practices to make your research more reproducible, in particular by using Jupyter Notebooks, and have the skills to do so.</li>
-<li>Have the confidence and foundation to continue improving reproducibility of your research.</li>
-<li>Understand what’s possible to further advance reproducibility of your research.</li>
-</ul>
+  <b>The following are the overarching learning objectives for the curriculum.</b>
+  <ul>
+    <li>Understand the value of reproducible research practices for more effective research for the current and future you.</li>
+    <li>Understand the value of reproducible research practices for advancing research as a whole.</li>
+    <li>Understand what is meant by making your research more reproducible.</li>
+    <li>Know practices to make your research more reproducible, in particular by using Jupyter Notebooks, and have the skills to do so.</li>
+    <li>Have the confidence and foundation to continue improving reproducibility of your research.</li>
+    <li>Understand what’s possible to further advance reproducibility of your research.</li>
+  </ul>
 
-<strong>Please also see the <a href="https://reproducible-science-curriculum.github.io/rr-jupyter-workshop/">general overiew of the workshop and the curriculum</a>.</strong>
+  <strong>Please also see the <a href="https://reproducible-science-curriculum.github.io/rr-jupyter-workshop/">general overiew of the workshop and the curriculum</a>.</strong>
 </p>
 <p>
-Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
+  Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
 
 
 <!--
-  AUDIENCE
+    AUDIENCE
 
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
--->
+    Explain who your audience is.  (In particular, tell readers if the
+    workshop is only open to people from a particular institution.
+  -->
 <p>
   <strong>Who:</strong>
-This workshop is aimed at graduate students, postdocs, and other researchers who perform computational analysis or work. The material uses basic Python and Jupyter Notebooks for teaching and illustrating the key concepts. Advanced knowledge of Python is not needed, but some familiarity with it will aid in absorbing the material.
+  This workshop is aimed at graduate students, postdocs, and other researchers who perform computational analysis or work. The material uses basic Python and Jupyter Notebooks for teaching and illustrating the key concepts. Advanced knowledge of Python is not needed, but some familiarity with it will aid in absorbing the material.
 </p>
 
 <!--
-  LOCATION
+    LOCATION
 
-  This block displays the address and links to maps showing directions
-  if the latitude and longitude of the workshop have been set.  You
-  can use http://itouchmap.com/latlong.html to find the lat/long of an
-  address.
--->
+    This block displays the address and links to maps showing directions
+    if the latitude and longitude of the workshop have been set.  You
+    can use http://itouchmap.com/latlong.html to find the lat/long of an
+    address.
+  -->
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
@@ -111,10 +108,10 @@ This workshop is aimed at graduate students, postdocs, and other researchers who
 {% endif %}
 
 <!--
-  SPECIAL REQUIREMENTS
+    SPECIAL REQUIREMENTS
 
-  Modify the block below if there are any special requirements.
--->
+    Modify the block below if there are any special requirements.
+  -->
 <p>
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
@@ -125,19 +122,19 @@ This workshop is aimed at graduate students, postdocs, and other researchers who
 </p>
 
 <!--
-  CONTACT EMAIL ADDRESS
+    CONTACT EMAIL ADDRESS
 
-  Display the contact email address set in the header.  If an address
-  isn't set in the header, the Software Carpentry admin address is
-  used.
--->
+    Display the contact email address set in the header.  If an address
+    isn't set in the header, the Software Carpentry admin address is
+    used.
+  -->
 <p>
   <strong>Contact</strong>:
   Please mail
   {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
   for more information.
 </p>
@@ -145,12 +142,12 @@ This workshop is aimed at graduate students, postdocs, and other researchers who
 <hr/>
 
 <!--
-  SCHEDULE
+    SCHEDULE
 
-  Show the workshop's schedule.  Edit the items and times in the table
-  to match your plans.  You may also want to change 'Day 1' and 'Day
-  2' to be actual dates or days of the week.
--->
+    Show the workshop's schedule.  Edit the items and times in the table
+    to match your plans.  You may also want to change 'Day 1' and 'Day
+    2' to be actual dates or days of the week.
+  -->
 <h2>Preliminary Schedule</h2>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
@@ -161,7 +158,7 @@ This workshop is aimed at graduate students, postdocs, and other researchers who
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
-       <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
+      <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
     </table>
 
 
@@ -170,22 +167,22 @@ This workshop is aimed at graduate students, postdocs, and other researchers who
       <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
       <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
     </table>
- </div>
+  </div>
 </div>
 
 
 <!--
-  ETHERPAD
+    ETHERPAD
 
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
+    Display the Etherpad for the workshop.  You can set this up in
+    advance or on the first day; either way, make sure you push changes
+    to GitHub after you have its URL.  To create an Etherpad, go to
 
-      http://etherpad.mozilla.org/YYYY-MM-DD-site
+    http://etherpad.mozilla.org/YYYY-MM-DD-site
 
-  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
-  '2015-06-10-esu'.
--->
+    where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
+    '2015-06-10-esu'.
+  -->
 {% if page.etherpad %}
 <p>
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
@@ -197,22 +194,22 @@ This workshop is aimed at graduate students, postdocs, and other researchers who
 <hr/>
 
 <!--
-  SYLLABUS
+    SYLLABUS
 
-  Show what topics will be covered.
+    Show what topics will be covered.
 
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
+    1. If your workshop is R rather than Python, remove the comment
+    around that section and put a comment around the Python section.
+    2. Some workshops will delete SQL.
+    3. Please make sure the list of topics is synchronized with what you
+    intend to teach.
+    4. You may need to move the div's with class="col-md-6" around inside
+    the div's with class="row" to balance the multi-column layout.
 
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
+    This is one of the places where people frequently make mistakes, so
+    please preview your site before committing, and make sure to run
+    'tools/check' as well.
+  -->
 
 <h2>Syllabus</h2>
 
@@ -247,126 +244,126 @@ This workshop is aimed at graduate students, postdocs, and other researchers who
     </ul>
     <span><a href="https://github.com/Reproducible-Science-Curriculum/data-exploration-RR-Jupyter">Lesson materials</a> and <a href="https://github.com/Reproducible-Science-Curriculum/data-exploration-RR-Jupyter/releases/tag/data-v0.1.0">download</a></span>
   </div>
-<div class="row">
-  <div class="col-md-6">
-    <h3>Automation</h3>
-    <ul>
-      <li>Best practices of variable naming</li>
-      <li>Learn about "Don't Repeat Yourself" (DRY)</li>
-      <li>Modularizing your code</li>
-      <li>Refactoring your code</li>
-      <li>Defining functions</li>
-      <li>Importing custom functions and using in a Jupyter notebook</li>
-      <li>Basic python testing (time permitting)</li>
-    </ul>
-    <span><a href="https://github.com/Reproducible-Science-Curriculum/automation-RR-Jupyter">Lesson materials</a>, <a href="https://raw.githubusercontent.com/Reproducible-Science-Curriculum/automation-RR-Jupyter/master/gapminder_cleaned.csv">Data download</a></span>
-  </div>
-  <div class="col-md-6">
-    <h3>Publishing and Sharing</h3>
-    <ul>
-      <li>Exporting the Notebook</li>
-      <li>Documentation</li>
-      <li>Record-level Metadata</li>
-      <li>Publication: Identifiers and licensing for research products.</li>
-    </ul>
-    <span><a href="https://github.com/Reproducible-Science-Curriculum/publication-RR-Jupyter">Lesson materials</a></span>
-  </div>
-</div>
-
-<hr/>
-
-<!--
-  SETUP
-
-  Delete irrelevant sections from the setup instructions.  Each
-  section is inside a 'div' without any classes to make the beginning
-  and end easier to find.
-
-  This is the other place where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-
-<h2 id="setup">Setup</h2>
-
-To participate in this workshop, you will need working copies of the
-described software. Please make sure to install everything (or at least to download
-the installers) before the start of your workshop. Participants should bring and use
-their own laptops to insure the proper setup of tools for an efficient workflow
-once you leave the workshop.
-
-<h3>
-	Jupyter notebook
-</h3>
-The best way to install the Jupyter notebook is to use Anaconda.
-<p>
-	Regardless of how you choose to install it, please make sure you install Python version 3.x (e.g., 3.4 is fine).
-	<p>
-		<div class="row">
-			<div class="col-md-6">
-				<h4>Windows</h4>
-				<ol>
-					<li> Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.
-					<li> Download the Python 3 installer for Windows.
-					<li> Install Python 3 using all of the defaults for installation except make sure to check *Make Anaconda the default Python*.
-				</ol>
-			</div>
-			<div class="col-md-6">
-				<h4>Mac OSX</h4>
-				<ol>
-					<li> Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.
-					<li> Download the Python 3 installer for Mac OSX.
-					<li> Install Python 3 using all of the defaults for installation
-				</ol>
-			</div>
-		</div>
-
-<div id="editor"> <!-- Start of 'editor' section. -->
-  <h3>Text Editor</h3>
-
-  <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on Mac OS X and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive.  if you accidentally find yourself stuck in it, try
-    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
-    exclamation mark), then hitting Return to return to the shell.
-  </p>
-
   <div class="row">
     <div class="col-md-6">
-      <h4 id="editor-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        To install it,
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
-      </p>
+      <h3>Automation</h3>
+      <ul>
+	<li>Best practices of variable naming</li>
+	<li>Learn about "Don't Repeat Yourself" (DRY)</li>
+	<li>Modularizing your code</li>
+	<li>Refactoring your code</li>
+	<li>Defining functions</li>
+	<li>Importing custom functions and using in a Jupyter notebook</li>
+	<li>Basic python testing (time permitting)</li>
+      </ul>
+      <span><a href="https://github.com/Reproducible-Science-Curriculum/automation-RR-Jupyter">Lesson materials</a>, <a href="https://raw.githubusercontent.com/Reproducible-Science-Curriculum/automation-RR-Jupyter/master/gapminder_cleaned.csv">Data download</a></span>
     </div>
     <div class="col-md-6">
-      <h4 id="editor-macosx">Mac OS X</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-        for an example on how to open nano.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-      </p>
+      <h3>Publishing and Sharing</h3>
+      <ul>
+	<li>Exporting the Notebook</li>
+	<li>Documentation</li>
+	<li>Record-level Metadata</li>
+	<li>Publication: Identifiers and licensing for research products.</li>
+      </ul>
+      <span><a href="https://github.com/Reproducible-Science-Curriculum/publication-RR-Jupyter">Lesson materials</a></span>
     </div>
   </div>
-</div> <!-- End of 'editor' section. -->
+
+  <hr/>
+
+  <!--
+      SETUP
+
+      Delete irrelevant sections from the setup instructions.  Each
+      section is inside a 'div' without any classes to make the beginning
+      and end easier to find.
+
+      This is the other place where people frequently make mistakes, so
+      please preview your site before committing, and make sure to run
+      'tools/check' as well.
+    -->
+
+  <h2 id="setup">Setup</h2>
+
+  To participate in this workshop, you will need working copies of the
+  described software. Please make sure to install everything (or at least to download
+  the installers) before the start of your workshop. Participants should bring and use
+  their own laptops to insure the proper setup of tools for an efficient workflow
+  once you leave the workshop.
+
+  <h3>
+    Jupyter notebook
+  </h3>
+  The best way to install the Jupyter notebook is to use Anaconda.
+  <p>
+    Regardless of how you choose to install it, please make sure you install Python version 3.x (e.g., 3.4 is fine).
+  <p>
+    <div class="row">
+      <div class="col-md-6">
+	<h4>Windows</h4>
+	<ol>
+	  <li> Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.
+	  <li> Download the Python 3 installer for Windows.
+	  <li> Install Python 3 using all of the defaults for installation except make sure to check *Make Anaconda the default Python*.
+	</ol>
+      </div>
+      <div class="col-md-6">
+	<h4>Mac OSX</h4>
+	<ol>
+	  <li> Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.
+	  <li> Download the Python 3 installer for Mac OSX.
+	  <li> Install Python 3 using all of the defaults for installation
+	</ol>
+      </div>
+    </div>
+
+    <div id="editor"> <!-- Start of 'editor' section. -->
+      <h3>Text Editor</h3>
+
+      <p>
+	When you're writing code, it's nice to have a text editor that is
+	optimized for writing code, with features like automatic
+	color-coding of key words.  The default text editor on Mac OS X and
+	Linux is usually set to Vim, which is not famous for being
+	intuitive.  if you accidentally find yourself stuck in it, try
+	typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
+	exclamation mark), then hitting Return to return to the shell.
+      </p>
+
+      <div class="row">
+	<div class="col-md-6">
+	  <h4 id="editor-windows">Windows</h4>
+	  <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+	  <p>
+            nano is a basic editor and the default that instructors use in the workshop.
+            To install it,
+            download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
+            and double click on the file to run it.
+            <strong>This installer requires an active internet connection.</strong>
+	  </p>
+	  <p>
+            Others editors that you can use are
+            <a href="http://notepad-plus-plus.org/">Notepad++</a> or
+            <a href="http://www.sublimetext.com/">Sublime Text</a>.
+            <strong>Be aware that you must
+              add its installation directory to your system path.</strong>
+            Please ask your instructor to help you do this.
+	  </p>
+	</div>
+	<div class="col-md-6">
+	  <h4 id="editor-macosx">Mac OS X</h4>
+	  <p>
+            nano is a basic editor and the default that instructors use in the workshop.
+            See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+            for an example on how to open nano.
+            It should be pre-installed.
+	  </p>
+	  <p>
+            Others editors that you can use are
+            <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+            <a href="http://www.sublimetext.com/">Sublime Text</a>.
+	  </p>
+	</div>
+      </div>
+    </div> <!-- End of 'editor' section. -->
